@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+
+ 
+
+
+    <div id="timeContainer">
+        <div id="timeDisplay">00:00:00</div>
+        <button id="startBtn" class="timerBtn">Start</button>
+        <button id="pauseBtn" class="timerBtn">Pause</button>
+        <button id="resetBtn" class="timerBtn">Reset</button>
+    </div>
+
+
+    <h1>Sledování Času na Sociálních Sítích</h1>
+    <p>Zadejte název sítě:</p>
+    <input type="text" id="sit" name="sit">
+    <br>
+    <p>Spusťte stopky:</p>
+    <button type="button" id="start" onclick="start()">Spustit</button>
+    <button type="button" id="stop" onclick="stop()">Zastavit</button>
+    <br>
+    <p>Uplynulý čas:</p>
+    <span id="cas">00:00:00</span>
+    <br>
+    <p>Historie:</p>
+    <ul id="historie"></ul>
+
+    <h1>Sledování Času na Sociálních Sítích s Limitem</h1>
+    <p>Zadejte název sítě:</p>
+    <input type="text" id="sit" name="sit">
+    <br>
+    <p>Zadejte denní limit (v minutách):</p>
+    <input type="number" id="limit" name="limit">
+    <br>
+    <p>Spusťte stopky:</p>
+    <button type="button" id="start" onclick="start()">Spustit</button>
+    <button type="button" id="stop" onclick="stop()">Zastavit</button>
+    <br>
+    <p>Zpráva:</p>
+    <span id="zprava"></span>
+ 
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
